@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TikTok Shop · Side Hustle</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      color: #ffffff;
+      line-height: 1.6;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(37,244,238,0.18), transparent 40%),
+        radial-gradient(circle at 85% 30%, rgba(254,44,85,0.2), transparent 45%),
+        linear-gradient(135deg, #0b0b0b, #141414);
+      min-height: 100vh;
+    }
+
+    /* TikTok-style abstract pattern */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          rgba(255,255,255,0.025),
+          rgba(255,255,255,0.025) 2px,
+          transparent 2px,
+          transparent 14px
+        );
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 20px 160px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 14px 36px;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #25F4EE, #FE2C55);
+      color: #000;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 36px;
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, #25F4EE, #FE2C55);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #cccccc;
+      max-width: 900px;
+      margin: 0 auto 80px;
+    }
+
+    .section {
+      margin-top: 90px;
+    }
+
+    .section h2 {
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 34px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      border-radius: 24px;
+      padding: 36px 30px;
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(8px);
+      transition: all 0.35s ease;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.55);
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      color: #bbbbbb;
+      font-size: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 14px;
+      color: #bbbbbb;
+    }
+
+    footer {
+      margin-top: 120px;
+      font-size: 14px;
+      color: #888;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+    }
+
+    .whatsapp-float a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #25D366, #1ebe5d);
+      color: #ffffff;
+      padding: 18px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.6);
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float a:hover {
+      transform: scale(1.06);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.75);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="badge">TikTok Shop · Side Hustle</div>
+
+    <h1>TikTok Shop · <span>Pekerjaan Sampingan</span></h1>
+
+    <p class="subtitle">
+      Kelola toko TikTok Shop di waktu luang Anda.  
+      Kami membantu proses setup dan operasional harian —  
+      tanpa pengalaman, tanpa tekanan, dan tanpa kewajiban membuat keputusan di hari pertama.
+    </p>
+
+    <div class="section">
+      <h2>Tanpa Tekanan, Tanpa Pengalaman</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Cocok untuk Pemula</h3>
+          <p>Tidak perlu latar belakang bisnis atau e-commerce.</p>
+        </div>
+        <div class="card">
+          <h3>Bisa Observasi Dulu</h3>
+          <p>Kebanyakan orang memilih untuk melihat dan memahami terlebih dahulu.</p>
+        </div>
+        <div class="card">
+          <h3>Bukan Kursus</h3>
+          <p>Ini adalah pendekatan berbasis pendampingan dan praktik nyata.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Pendekatan Kami</h2>
+      <div class="cards">
+        <div class="card">
+          <p>
+            Ini bukan kelas formal.  
+            Ini adalah cara santai dan bertahap untuk mengenal TikTok Shop  
+            dalam lingkungan yang tenang dan tanpa tekanan.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            Anda tidak belajar sendirian.  
+            Kami membimbing langkah demi langkah dalam setup dan tahap awal operasional.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            Anda bergerak sesuai ritme sendiri.  
+            Tidak ada keharusan cepat mengambil keputusan.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            Kendali tetap di tangan Anda.  
+            Tidak ada paksaan, tidak ada urgensi buatan.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Apa yang Kami Bantu</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Setup Toko</h3>
+          <p>Struktur akun dan konfigurasi dasar TikTok Shop.</p>
+        </div>
+        <div class="card">
+          <h3>Arah Produk</h3>
+          <p>Jenis produk apa yang biasanya cocok di platform.</p>
+        </div>
+        <div class="card">
+          <h3>Panduan Harian</h3>
+          <p>Apa yang perlu dilakukan, dihindari, dan difokuskan.</p>
+        </div>
+        <div class="card">
+          <h3>Dukungan Berkelanjutan</h3>
+          <p>Pendampingan selama proses berjalan.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Bagaimana Kebanyakan Orang Memulai</h2>
+      <div class="cards">
+        <div class="card">
+          <p>Mereka melihat peluang TikTok Shop.</p>
+        </div>
+        <div class="card">
+          <p>Mereka tertarik, namun belum yakin apakah cocok.</p>
+        </div>
+        <div class="card">
+          <p>Mereka berbincang, bergabung dalam grup, dan mengamati.</p>
+        </div>
+        <div class="card">
+          <p>Setelah itu, barulah mereka memutuskan langkah selanjutnya.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Halaman ini bersifat informatif dan pendampingan.  
+      Tidak menjanjikan hasil atau penghasilan tertentu.  
+      Keputusan sepenuhnya berada di tangan masing-masing individu.
+    </footer>
+
+  </div>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/6282313652591" target="_blank">
+      💬 Diskusi via WhatsApp
+    </a>
+  </div>
+
+</body>
+</html>
