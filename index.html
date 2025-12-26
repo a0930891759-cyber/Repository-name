@@ -11,7 +11,16 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     color: #ffffff;
     background: 
-        linear-gradient(45deg, rgba(0,255,0,0.5), rgba(255,0,0,0.5), rgba(0,0,255,0.5)); /* Green, Red, Blue gradient */
+        linear-gradient(45deg, rgba(255,0,200,0.6), rgba(0,153,255,0.6), rgba(0,0,0,0.6)); /* Purple, Blue, Black gradient */
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* TikTok pattern */
