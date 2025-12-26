@@ -1,19 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Display</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="image-container">
-            <img src="/mnt/data/171e0fc1-aa0a-46e1-ab7d-39c31330d019.png" alt="Man using phone with TikTok Shop" class="image">
-        </div>
-        <div class="description">
-            <p>This image shows a man interacting with TikTok Shop on his mobile phone while sitting on a couch in a modern, well-lit room.</p>
-        </div>
-    </div>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
