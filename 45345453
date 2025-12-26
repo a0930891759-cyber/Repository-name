@@ -9,12 +9,18 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    color: #ffffff;
+    color: #333333; /* Darker font color */
     background: 
-        radial-gradient(circle at 20% 20%, rgba(255,0,80,0.15), transparent 40%),
-        radial-gradient(circle at 80% 30%, rgba(0,240,255,0.15), transparent 40%),
-        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.05), transparent 50%),
-        #000000;
+        linear-gradient(45deg, rgba(255,0,200,0.6), rgba(0,153,255,0.6), rgba(0,0,0,0.6)); /* Purple, Blue, Black gradient */
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* TikTok pattern */
@@ -44,13 +50,14 @@ body::before {
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 50px; /* Increased font size */
     margin-bottom: 20px;
+    font-weight: bold; /* Make the heading bolder */
 }
 
 .hero p {
-    font-size: 18px;
-    color: #cccccc;
+    font-size: 22px; /* Increased font size */
+    color: #dddddd; /* Slightly lighter color for description */
     line-height: 1.6;
 }
 
@@ -59,13 +66,14 @@ body::before {
 }
 
 .section h2 {
-    font-size: 30px;
+    font-size: 36px; /* Increased font size */
     margin-bottom: 20px;
+    color: #ffffff; /* Darker color for section title */
 }
 
 .section p, .section li {
-    font-size: 17px;
-    color: #dddddd;
+    font-size: 20px; /* Increased font size */
+    color: #dddddd; /* Slightly lighter color */
     line-height: 1.7;
 }
 
@@ -85,6 +93,8 @@ body::before {
 .card h3 {
     margin-top: 0;
     margin-bottom: 10px;
+    font-size: 22px; /* Increased font size */
+    color: #ffffff; /* Darker color for card titles */
 }
 
 /* WhatsApp floating button */
@@ -101,7 +111,7 @@ body::before {
     color: #ffffff;
     padding: 16px 28px;
     border-radius: 40px;
-    font-size: 18px;
+    font-size: 22px; /* Increased font size */
     font-weight: bold;
     text-decoration: none;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
